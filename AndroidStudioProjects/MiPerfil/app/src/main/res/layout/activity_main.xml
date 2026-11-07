@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="#FFFFFF">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp" android:gravity="center_horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Mi Perfil" android:textSize="30sp" android:textStyle="bold"
+            android:textColor="#47318B" android:layout_marginTop="30dp" />
+        <LinearLayout android:id="@+id/panelLogin" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="35dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Iniciar sesión" android:textSize="22sp" android:textColor="#222222" />
+            <EditText android:id="@+id/loginCorreo" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Correo electrónico"
+                android:inputType="textEmailAddress" android:singleLine="true" android:textColor="@android:color/black" android:textColorHint="#666666"/>
+            <EditText android:id="@+id/loginClave" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Contraseña"
+                android:inputType="textPassword" android:textColor="@android:color/black" android:textColorHint="#666666"/>
+            <Button android:id="@+id/botonEntrar" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Entrar" />
+            <Button android:id="@+id/irRegistro" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Crear cuenta" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/panelRegistro" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:layout_marginTop="35dp" android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Registrar usuario" android:textSize="22sp" android:textColor="#222222" />
+            <EditText android:id="@+id/registroNombre" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Nombre" android:inputType="textPersonName" android:textColor="@android:color/black" android:textColorHint="#666666"/>
+            <EditText android:id="@+id/registroCorreo" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Correo electrónico"
+                android:inputType="textEmailAddress" android:textColor="@android:color/black" android:textColorHint="#666666"/>
+            <EditText android:id="@+id/registroClave" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="Contraseña (mínimo 8 caracteres)"
+                android:inputType="textPassword" android:textColor="@android:color/black" android:textColorHint="#666666"/>
+            <Button android:id="@+id/botonRegistrar" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Registrarme" />
+            <Button android:id="@+id/irLogin" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Volver al login" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/panelPerfil" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:gravity="center_horizontal" android:layout_marginTop="35dp" android:visibility="gone">
+            <ImageView android:id="@+id/fotoPerfil" android:layout_width="190dp"
+                android:layout_height="190dp" android:background="#EEE8F7"
+                android:scaleType="centerCrop" android:contentDescription="Foto de perfil" />
+            <TextView android:id="@+id/textoNombre" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="18dp"
+                android:text="Nombre" android:textColor="#222222" android:textSize="23sp" />
+            <TextView android:id="@+id/textoCorreo" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Correo" android:textSize="16sp"
+                android:textColor="#555555" />
+            <Button android:id="@+id/botonFoto" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Tomar fotografía"
+                android:layout_marginTop="24dp" />
+            <Button android:id="@+id/botonGaleria" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Elegir de galería" />
+            <Button android:id="@+id/botonSalir" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Cerrar sesión" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
